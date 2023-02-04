@@ -1,6 +1,6 @@
 
-CI/CD for WordPress
-Preparation
+# CI/CD for WordPress
+## Preparation
 We will need a virtual machine with docker and docker-compose installed.Personally, I installed on Ubuntu 20.04
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-ru
 Create a wordpress directory with the command():
@@ -55,7 +55,7 @@ services:
    command: "bash /opt/configure-wp.sh"
 _____________________________________________________________________________________________
 
-WordPress with docker and docker-compose
+# WordPress with docker and docker-compose
 go to the /wordpress directory and start the container with the help of docker
 _____________________________________________________________________________________________
 docker-compose up 
@@ -80,7 +80,7 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________
 We go to the address and check that everything works
 
-Database backup via wp-cli
+# Database backup via wp-cli
 
 Create a script to export the database
 _____________________________________________________________________________________________
@@ -135,9 +135,9 @@ ________________________________________________________________________________
 Success: Imported from 'wordpress-2023-01-30-062339e.sql'.
  _____________________________________________________________________________________________
 
-Create a git repository for a site template
-How to install and configure Gitlab on Ubuntu
-I'm sluggish from this article
+# Create a git repository for a site template
+## How to install and configure Gitlab on Ubuntu
+## I'm sluggish from this article
 https://ruvds.com/ru/helpcenter/kak-ustanovit-gitlab-na-ubuntu-20-04/
 
 Before we upload our entire farm to git, we'll add a couple more files. We need to add one more script here - chmod.sh.
@@ -176,5 +176,5 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________
 
 The sources of the site and the database fly into the repository.
-Somehow so far.
+# Somehow so far.
 
